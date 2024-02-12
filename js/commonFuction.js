@@ -16,9 +16,14 @@ function getElementValueById(elementId) {
   return elementNumberValue;
 }
 
-// add function
+// addition function
 function addingTwoNumbers(number1, number2) {
   return number1 + number2;
+}
+
+// subtraction function
+function deductingTwoNumbers(number1, number2) {
+  return number1 - number2;
 }
 
 // set text into an element
