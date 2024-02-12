@@ -3,15 +3,9 @@ function getFieldValueById(fieldId) {
   const amountField = document.getElementById(fieldId);
   const amountFieldStringValue = amountField.value;
   amountField.value = "";
-  let amountFieldNumberValue = parseInt(amountFieldStringValue);
+  let amountFieldNumberValue = parseFloat(amountFieldStringValue);
+  return amountFieldNumberValue;
   // console.log(amountFieldStringValue);
-
-  // check validity of number
-  if (isNaN(amountFieldNumberValue) === true) {
-    alert("Invalid amount");
-  } else {
-    return amountFieldNumberValue;
-  }
 }
 
 // get total-amount

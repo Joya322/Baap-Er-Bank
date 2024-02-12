@@ -1,11 +1,12 @@
 document.getElementById('login-btn').addEventListener('click', function () {
-    let emailField = document.getElementById('user-email');
-    let emailFieldValue = emailField.value;
+    // getting user email
+    const emailField = document.getElementById('user-email');
+    const emailFieldValue = emailField.value;
     
-    let passwordField = document.getElementById('user-password');
-    let passwordFieldValue = passwordField.value;
+    // getting user password
+    const passwordField = document.getElementById('user-password');
+    const passwordFieldValue = passwordField.value;
     
-    // console.log(emailFieldValue, passwordFieldValue);
     if (emailFieldValue === 'jannat@gmail.com' && passwordFieldValue === '12345') {
         window.location.href = "account.html"
     }
